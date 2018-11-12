@@ -20,7 +20,7 @@ var commentRoutes       = require("./routes/comments"),
 //seedDB();
 
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-//mongoose.connect("mongodb://tluong:abc123AA@ds133642.mlab.com:33642/trangcamp", {useNewUrlParser: true});
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs"); 
